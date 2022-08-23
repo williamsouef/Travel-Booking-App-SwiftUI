@@ -13,7 +13,7 @@ struct UserView: View {
         
         Text(username)
             .font(.title2)
-            .kerning(2.0)
+            .kerning(3.0)
             .multilineTextAlignment(.center)
             
         
