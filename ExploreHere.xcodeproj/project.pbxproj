@@ -11,6 +11,12 @@
 		B31D474328B51AF900A75FC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D474228B51AF900A75FC1 /* ContentView.swift */; };
 		B31D474528B51AFA00A75FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D474428B51AFA00A75FC1 /* Assets.xcassets */; };
 		B31D474828B51AFA00A75FC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D474728B51AFA00A75FC1 /* Preview Assets.xcassets */; };
+		B31D474F28B5230D00A75FC1 /* Roundviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D474E28B5230D00A75FC1 /* Roundviews.swift */; };
+		B31D475128B5235500A75FC1 /* UserViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475028B5235500A75FC1 /* UserViews.swift */; };
+		B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475228B523A300A75FC1 /* InfoViews.swift */; };
+		B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475428B523EA00A75FC1 /* HomescreenView.swift */; };
+		B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475628B5241400A75FC1 /* OnboardingView.swift */; };
+		B31D475928B5243400A75FC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475828B5243400A75FC1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		B31D474228B51AF900A75FC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B31D474428B51AFA00A75FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31D474728B51AFA00A75FC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B31D474E28B5230D00A75FC1 /* Roundviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roundviews.swift; sourceTree = "<group>"; };
+		B31D475028B5235500A75FC1 /* UserViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViews.swift; sourceTree = "<group>"; };
+		B31D475228B523A300A75FC1 /* InfoViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViews.swift; sourceTree = "<group>"; };
+		B31D475428B523EA00A75FC1 /* HomescreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenView.swift; sourceTree = "<group>"; };
+		B31D475628B5241400A75FC1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B31D475828B5243400A75FC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,12 @@
 				B31D474228B51AF900A75FC1 /* ContentView.swift */,
 				B31D474428B51AFA00A75FC1 /* Assets.xcassets */,
 				B31D474628B51AFA00A75FC1 /* Preview Content */,
+				B31D474E28B5230D00A75FC1 /* Roundviews.swift */,
+				B31D475028B5235500A75FC1 /* UserViews.swift */,
+				B31D475228B523A300A75FC1 /* InfoViews.swift */,
+				B31D475428B523EA00A75FC1 /* HomescreenView.swift */,
+				B31D475628B5241400A75FC1 /* OnboardingView.swift */,
+				B31D475828B5243400A75FC1 /* Constants.swift */,
 			);
 			path = ExploreHere;
 			sourceTree = "<group>";
@@ -139,6 +157,12 @@
 			files = (
 				B31D474328B51AF900A75FC1 /* ContentView.swift in Sources */,
 				B31D474128B51AF900A75FC1 /* ExploreHereApp.swift in Sources */,
+				B31D474F28B5230D00A75FC1 /* Roundviews.swift in Sources */,
+				B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */,
+				B31D475128B5235500A75FC1 /* UserViews.swift in Sources */,
+				B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */,
+				B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */,
+				B31D475928B5243400A75FC1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
