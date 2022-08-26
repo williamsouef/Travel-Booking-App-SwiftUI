@@ -17,6 +17,7 @@
 		B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475428B523EA00A75FC1 /* HomescreenView.swift */; };
 		B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475628B5241400A75FC1 /* OnboardingView.swift */; };
 		B31D475928B5243400A75FC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475828B5243400A75FC1 /* Constants.swift */; };
+		B31D475B28B5333D00A75FC1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B31D475A28B5333D00A75FC1 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B31D475428B523EA00A75FC1 /* HomescreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenView.swift; sourceTree = "<group>"; };
 		B31D475628B5241400A75FC1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B31D475828B5243400A75FC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B31D475A28B5333D00A75FC1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		B31D473F28B51AF900A75FC1 /* ExploreHere */ = {
 			isa = PBXGroup;
 			children = (
+				B31D475A28B5333D00A75FC1 /* README.md */,
 				B31D474028B51AF900A75FC1 /* ExploreHereApp.swift */,
 				B31D474228B51AF900A75FC1 /* ContentView.swift */,
 				B31D474428B51AFA00A75FC1 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31D475B28B5333D00A75FC1 /* README.md in Resources */,
 				B31D474828B51AFA00A75FC1 /* Preview Assets.xcassets in Resources */,
 				B31D474528B51AFA00A75FC1 /* Assets.xcassets in Resources */,
 			);
