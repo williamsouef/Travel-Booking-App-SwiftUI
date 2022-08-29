@@ -37,25 +37,23 @@ addItems(newItem: hotel5)
 addItems(newItem: hotel6)
 
 
-
-func displayItemList ( itemList: [Hotels]) {
-    var itemList = hotelList
-    for itemList in itemList {
-        print(hotel1,hotel2,hotel4,hotel5)
-   
+func displayItemList ( hotelList: [Hotels]) {
+    
+    var withOutOptionls = [Hotels]()
+    
+    for hotel in hotelList {
+        if hotel.suitRoom != nil {
+            withOutOptionls.append(hotel)
+        } else {
+        continue
+        }
     }
-    
+    print(withOutOptionls)
 }
+displayItemList(hotelList: hotelList)
 
 
-//if hotel6.suitRoom != nil {
-    //print(hotel6.suitRoom!)
-//}
-//if hotel6.suitRoom == nil {
-    
-//}
-//print(hotel1)
-//hotel.forEach() { print($0) }
+
 
 
 
