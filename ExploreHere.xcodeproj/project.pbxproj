@@ -18,6 +18,7 @@
 		B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475628B5241400A75FC1 /* OnboardingView.swift */; };
 		B31D475928B5243400A75FC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475828B5243400A75FC1 /* Constants.swift */; };
 		B31D475B28B5333D00A75FC1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B31D475A28B5333D00A75FC1 /* README.md */; };
+		B31D475E28BCF6CF00A75FC1 /* HotelListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,7 @@
 		B31D475628B5241400A75FC1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B31D475828B5243400A75FC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B31D475A28B5333D00A75FC1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../../README.md; sourceTree = "<group>"; };
-		B31D475C28BC80F900A75FC1 /* homeworkweek2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = homeworkweek2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,16 +69,10 @@
 			children = (
 				B31D475A28B5333D00A75FC1 /* README.md */,
 				B31D474028B51AF900A75FC1 /* ExploreHereApp.swift */,
-				B31D474228B51AF900A75FC1 /* ContentView.swift */,
 				B31D474428B51AFA00A75FC1 /* Assets.xcassets */,
 				B31D474628B51AFA00A75FC1 /* Preview Content */,
-				B31D474E28B5230D00A75FC1 /* Roundviews.swift */,
-				B31D475028B5235500A75FC1 /* UserViews.swift */,
-				B31D475228B523A300A75FC1 /* InfoViews.swift */,
-				B31D475428B523EA00A75FC1 /* HomescreenView.swift */,
-				B31D475628B5241400A75FC1 /* OnboardingView.swift */,
-				B31D475828B5243400A75FC1 /* Constants.swift */,
-				B31D475C28BC80F900A75FC1 /* homeworkweek2.playground */,
+				B31D476028BCF71E00A75FC1 /* Model */,
+				B31D475F28BCF6F400A75FC1 /* Views */,
 			);
 			path = ExploreHere;
 			sourceTree = "<group>";
@@ -88,6 +83,28 @@
 				B31D474728B51AFA00A75FC1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B31D475F28BCF6F400A75FC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B31D474228B51AF900A75FC1 /* ContentView.swift */,
+				B31D474E28B5230D00A75FC1 /* Roundviews.swift */,
+				B31D475028B5235500A75FC1 /* UserViews.swift */,
+				B31D475228B523A300A75FC1 /* InfoViews.swift */,
+				B31D475428B523EA00A75FC1 /* HomescreenView.swift */,
+				B31D475628B5241400A75FC1 /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B31D476028BCF71E00A75FC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */,
+				B31D475828B5243400A75FC1 /* Constants.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +184,7 @@
 				B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */,
 				B31D475128B5235500A75FC1 /* UserViews.swift in Sources */,
 				B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */,
+				B31D475E28BCF6CF00A75FC1 /* HotelListModel.swift in Sources */,
 				B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */,
 				B31D475928B5243400A75FC1 /* Constants.swift in Sources */,
 			);
@@ -292,7 +310,6 @@
 		B31D474C28B51AFA00A75FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -322,7 +339,6 @@
 		B31D474D28B51AFA00A75FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

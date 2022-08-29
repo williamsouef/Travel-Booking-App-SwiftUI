@@ -1,5 +1,12 @@
-import UIKit
+//
+//  HotelListModel.swift
+//  ExploreHere
+//
+//  Created by William Souef on 29/08/2022.
+//
 
+import Foundation
+import UIKit
 
 struct Hotels  {
    
@@ -28,13 +35,13 @@ var hotelList : [Hotels] = []
 func addItems (newItem: Hotels ) {
    
     hotelList.append(newItem)
+    addItems(newItem: hotel1)
+    addItems(newItem: hotel2)
+    addItems(newItem: hotel3)
+    addItems(newItem: hotel4)
+    addItems(newItem: hotel5)
+    addItems(newItem: hotel6)
 }
-addItems(newItem: hotel1)
-addItems(newItem: hotel2)
-addItems(newItem: hotel3)
-addItems(newItem: hotel4)
-addItems(newItem: hotel5)
-addItems(newItem: hotel6)
 
 
 func displayItemList ( hotelList: [Hotels]) {
@@ -50,10 +57,4 @@ func displayItemList ( hotelList: [Hotels]) {
     }
     print(withOutOptionls)
 }
-displayItemList(hotelList: hotelList)
-
-
-
-
-
 
