@@ -33,6 +33,7 @@
 		B31D475628B5241400A75FC1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B31D475828B5243400A75FC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B31D475A28B5333D00A75FC1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../../README.md; sourceTree = "<group>"; };
+		B31D475C28BC80F900A75FC1 /* homeworkweek2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = homeworkweek2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 				B31D475428B523EA00A75FC1 /* HomescreenView.swift */,
 				B31D475628B5241400A75FC1 /* OnboardingView.swift */,
 				B31D475828B5243400A75FC1 /* Constants.swift */,
+				B31D475C28BC80F900A75FC1 /* homeworkweek2.playground */,
 			);
 			path = ExploreHere;
 			sourceTree = "<group>";
