@@ -32,17 +32,23 @@ var hotel6 = Hotels(name: "Bali", description: "Surrended by nature", image: "",
 var hotelList : [Hotels] = []
 
 
-func addItems (newItem: Hotels ) {
+func addHotels (newItem: Hotels ) {
    
     hotelList.append(newItem)
-    addItems(newItem: hotel1)
-    addItems(newItem: hotel2)
-    addItems(newItem: hotel3)
-    addItems(newItem: hotel4)
-    addItems(newItem: hotel5)
-    addItems(newItem: hotel6)
+
 }
 
+func hotelSetup () {
+    
+    addHotels(newItem: hotel1)
+    addHotels(newItem: hotel2)
+    addHotels(newItem: hotel3)
+    addHotels(newItem: hotel4)
+    addHotels(newItem: hotel5)
+    addHotels(newItem: hotel6)
+   
+    
+}
 
 func displayItemList ( hotelList: [Hotels]) {
     
