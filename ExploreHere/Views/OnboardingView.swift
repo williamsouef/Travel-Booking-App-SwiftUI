@@ -76,6 +76,7 @@ struct OnboardingScreen: View {
 
 
 struct OnboardingScreen_Previews: PreviewProvider {
+    
     private static var OnboardingScreenIsShowing = Binding.constant(false)
     static var previews: some View {
         OnboardingScreen(OnboardingScreenIsShowing: OnboardingScreenIsShowing)
