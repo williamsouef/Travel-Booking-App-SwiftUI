@@ -19,6 +19,8 @@
 		B31D475928B5243400A75FC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475828B5243400A75FC1 /* Constants.swift */; };
 		B31D475B28B5333D00A75FC1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B31D475A28B5333D00A75FC1 /* README.md */; };
 		B31D475E28BCF6CF00A75FC1 /* HotelListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */; };
+		B3A0191D28CC7C49000D2A27 /* ListViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0191C28CC7C42000D2A27 /* ListViews.swift */; };
+		B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0191E28CCDB74000D2A27 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListModel.swift; sourceTree = "<group>"; };
 		B31D476128BFE43500A75FC1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B3850AA128C636D8004DA281 /* homeworkweek3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = homeworkweek3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B3A0191C28CC7C42000D2A27 /* ListViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViews.swift; sourceTree = "<group>"; };
+		B3A0191E28CCDB74000D2A27 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				B31D475028B5235500A75FC1 /* UserViews.swift */,
 				B31D475228B523A300A75FC1 /* InfoViews.swift */,
 				B31D475428B523EA00A75FC1 /* HomescreenView.swift */,
+				B3A0191C28CC7C42000D2A27 /* ListViews.swift */,
+				B3A0191E28CCDB74000D2A27 /* DetailView.swift */,
 				B31D475628B5241400A75FC1 /* OnboardingView.swift */,
 			);
 			path = Views;
@@ -184,8 +190,10 @@
 			files = (
 				B31D474328B51AF900A75FC1 /* ContentView.swift in Sources */,
 				B31D474128B51AF900A75FC1 /* ExploreHereApp.swift in Sources */,
+				B3A0191D28CC7C49000D2A27 /* ListViews.swift in Sources */,
 				B31D474F28B5230D00A75FC1 /* Roundviews.swift in Sources */,
 				B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */,
+				B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */,
 				B31D475128B5235500A75FC1 /* UserViews.swift in Sources */,
 				B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */,
 				B31D475E28BCF6CF00A75FC1 /* HotelListModel.swift in Sources */,

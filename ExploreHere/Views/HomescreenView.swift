@@ -49,7 +49,9 @@ struct Homescreen: View {
              
     
             }.padding(.leading)
-                    
+                
+              // ADD BUTTON - the action is going to redirect to the listview
+                
             Image("iphone120")
                 .resizable()
                 .aspectRatio(contentMode:.fit)
