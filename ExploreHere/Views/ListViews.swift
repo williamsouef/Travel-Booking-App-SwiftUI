@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ListScreen : View {
     
+ @Binding var ListScreenisShowing : Bool
  @State var hotelList : [Hotels] = [hotel1,hotel2,hotel3,hotel4,hotel5,hotel6]
 
     
@@ -54,8 +55,10 @@ struct ListScreen : View {
 
 struct ListScreen_Previews: PreviewProvider {
     
+    private static var ListScreenisShowing = Binding.constant(false)
     static var previews: some View {
-        ListScreen()
+       
+        ListScreen(ListScreenisShowing: ListScreenisShowing)
     }
 }
 
