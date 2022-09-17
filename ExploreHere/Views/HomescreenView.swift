@@ -10,6 +10,7 @@ import SwiftUI
 struct Homescreen: View {
   
     @State private var OnboardingScreenIsShowing = false
+    @State private var ListScreenisShowing = false
     
     var body: some View {
      
@@ -49,13 +50,23 @@ struct Homescreen: View {
              
     
             }.padding(.leading)
-                    
+                
+                Button(action : {
+                    withAnimation{
+                        ListScreenisShowing = true
+                    }
+                }){
+                
             Image("iphone120")
                 .resizable()
                 .aspectRatio(contentMode:.fit)
                 .frame(width: Constants.General.imageWidth,   height: Constants.General.imageHeight)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color("TitleBackgroundColor"), lineWidth: Constants.General.lineWidth))
+                }.sheet(isPresented:$ListScreenisShowing,onDismiss: {}, content: {
+                    ListScreen(ListScreenisShowing:$ListScreenisShowing)
+                    
+               })
                 
             }
 }
