@@ -21,6 +21,11 @@
 		B31D475E28BCF6CF00A75FC1 /* HotelListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */; };
 		B3A0191D28CC7C49000D2A27 /* ListViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0191C28CC7C42000D2A27 /* ListViews.swift */; };
 		B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0191E28CCDB74000D2A27 /* DetailView.swift */; };
+		B3EC7EC428D3C5C2001E276E /* PlanTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EC328D3C5C2001E276E /* PlanTripView.swift */; };
+		B3EC7EC628D3C744001E276E /* PlanTripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EC528D3C744001E276E /* PlanTripModel.swift */; };
+		B3EC7ECA28D5DBBA001E276E /* ExperiencesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EC928D5DBBA001E276E /* ExperiencesButton.swift */; };
+		B3EC7ECC28D60207001E276E /* DetailExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ECB28D60207001E276E /* DetailExperienceView.swift */; };
+		B3EC7ED028D74A27001E276E /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ECF28D74A27001E276E /* FavoriteButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		B3850AA128C636D8004DA281 /* homeworkweek3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = homeworkweek3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B3A0191C28CC7C42000D2A27 /* ListViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViews.swift; sourceTree = "<group>"; };
 		B3A0191E28CCDB74000D2A27 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B3EC7EC328D3C5C2001E276E /* PlanTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTripView.swift; sourceTree = "<group>"; };
+		B3EC7EC528D3C744001E276E /* PlanTripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTripModel.swift; sourceTree = "<group>"; };
+		B3EC7EC928D5DBBA001E276E /* ExperiencesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesButton.swift; sourceTree = "<group>"; };
+		B3EC7ECB28D60207001E276E /* DetailExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExperienceView.swift; sourceTree = "<group>"; };
+		B3EC7ECF28D74A27001E276E /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				B31D474228B51AF900A75FC1 /* ContentView.swift */,
-				B31D474E28B5230D00A75FC1 /* Roundviews.swift */,
-				B31D475028B5235500A75FC1 /* UserViews.swift */,
-				B31D475228B523A300A75FC1 /* InfoViews.swift */,
-				B31D475428B523EA00A75FC1 /* HomescreenView.swift */,
-				B3A0191C28CC7C42000D2A27 /* ListViews.swift */,
-				B3A0191E28CCDB74000D2A27 /* DetailView.swift */,
-				B31D475628B5241400A75FC1 /* OnboardingView.swift */,
+				B3EC7ECF28D74A27001E276E /* FavoriteButtonView.swift */,
+				B3EC7ED328D74B15001E276E /* Welcome */,
+				B3EC7ED228D74AC6001E276E /* Hotels */,
+				B3EC7ED128D74A71001E276E /* Activities */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,8 +120,40 @@
 			children = (
 				B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */,
 				B31D475828B5243400A75FC1 /* Constants.swift */,
+				B3EC7EC528D3C744001E276E /* PlanTripModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B3EC7ED128D74A71001E276E /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				B3EC7ECB28D60207001E276E /* DetailExperienceView.swift */,
+				B3EC7EC928D5DBBA001E276E /* ExperiencesButton.swift */,
+				B3EC7EC328D3C5C2001E276E /* PlanTripView.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		B3EC7ED228D74AC6001E276E /* Hotels */ = {
+			isa = PBXGroup;
+			children = (
+				B3A0191E28CCDB74000D2A27 /* DetailView.swift */,
+				B3A0191C28CC7C42000D2A27 /* ListViews.swift */,
+			);
+			path = Hotels;
+			sourceTree = "<group>";
+		};
+		B3EC7ED328D74B15001E276E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B31D475028B5235500A75FC1 /* UserViews.swift */,
+				B31D475228B523A300A75FC1 /* InfoViews.swift */,
+				B31D475428B523EA00A75FC1 /* HomescreenView.swift */,
+				B31D475628B5241400A75FC1 /* OnboardingView.swift */,
+				B31D474E28B5230D00A75FC1 /* Roundviews.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,12 +229,17 @@
 			files = (
 				B31D474328B51AF900A75FC1 /* ContentView.swift in Sources */,
 				B31D474128B51AF900A75FC1 /* ExploreHereApp.swift in Sources */,
+				B3EC7ED028D74A27001E276E /* FavoriteButtonView.swift in Sources */,
+				B3EC7EC428D3C5C2001E276E /* PlanTripView.swift in Sources */,
 				B3A0191D28CC7C49000D2A27 /* ListViews.swift in Sources */,
 				B31D474F28B5230D00A75FC1 /* Roundviews.swift in Sources */,
+				B3EC7EC628D3C744001E276E /* PlanTripModel.swift in Sources */,
 				B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */,
 				B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */,
 				B31D475128B5235500A75FC1 /* UserViews.swift in Sources */,
+				B3EC7ECA28D5DBBA001E276E /* ExperiencesButton.swift in Sources */,
 				B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */,
+				B3EC7ECC28D60207001E276E /* DetailExperienceView.swift in Sources */,
 				B31D475E28BCF6CF00A75FC1 /* HotelListModel.swift in Sources */,
 				B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */,
 				B31D475928B5243400A75FC1 /* Constants.swift in Sources */,

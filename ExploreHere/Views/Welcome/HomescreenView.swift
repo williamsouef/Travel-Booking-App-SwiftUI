@@ -11,13 +11,15 @@ struct Homescreen: View {
   
     @State private var OnboardingScreenIsShowing = false
     @State private var ListScreenisShowing = false
+  
     
     var body: some View {
-     
-        ZStack {
-            ScrollView{
-            VStack(alignment: .leading, spacing: 0){
-            HStack{
+       
+    
+    ZStack {
+        ScrollView{
+         VStack(alignment: .leading, spacing: 0){
+             HStack{
                 TitleHome(title: "WELCOME,")
                     .padding()
                     .padding()
@@ -28,34 +30,22 @@ struct Homescreen: View {
                     }
                 }){
                     RoundViews(systemName: "info")
-                    
-                    
                 }.sheet(isPresented: $OnboardingScreenIsShowing, onDismiss: {}, content: {
                     OnboardingScreen(OnboardingScreenIsShowing: $OnboardingScreenIsShowing)
                 })
                 }
                 
-                VStack{
-                    
-                HStack{
+            VStack{
+                    HStack{
                     
                 UserView(username: "WILLIAM SOUEF !")
                         .padding()
                         .padding()
                 
                 }
-                    
                     Spacer()
                 }
-             
-    
             }.padding(.leading)
-                
-                Button(action : {
-                    withAnimation{
-                        ListScreenisShowing = true
-                    }
-                }){
                 
             Image("iphone120")
                 .resizable()
@@ -63,16 +53,15 @@ struct Homescreen: View {
                 .frame(width: Constants.General.imageWidth,   height: Constants.General.imageHeight)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color("TitleBackgroundColor"), lineWidth: Constants.General.lineWidth))
-                }.sheet(isPresented:$ListScreenisShowing,onDismiss: {}, content: {
-                    ListScreen(ListScreenisShowing:$ListScreenisShowing)
+                }
                     
-               })
+               }
                 
             }
 }
-    }
-}
     
+
+
     
 
 struct Homescreen_Previews: PreviewProvider {
