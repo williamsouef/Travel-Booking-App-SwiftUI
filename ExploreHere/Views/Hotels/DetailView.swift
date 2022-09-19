@@ -13,7 +13,7 @@ struct DetailView: View {
     var hotel : Hotels = hotelList[0]
     
     var body: some View {
-        VStack{
+        VStack(alignment: .center, spacing: 10){
       
             Image(hotel.image)
                 .resizable()
@@ -25,11 +25,32 @@ struct DetailView: View {
                 .fontWeight(.semibold)
             
             Text(hotel.description)
+                .tracking(-1)
+                .multilineTextAlignment(.leading)
             
-            
-            
-            
+            Button(action: {
+                withAnimation{
+                print("Added to the hotel booking list")
+                }
+            }){
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(Color.blue)
+                    .frame(width: 120, height: 60)
+                
+                    .font(.title)
+                    .overlay(HStack{
+                      
+                        Text("Register")
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.white
+                            )
+                            
+                    })
             }
+
+            
+            
+        }.padding()
             
         }
         

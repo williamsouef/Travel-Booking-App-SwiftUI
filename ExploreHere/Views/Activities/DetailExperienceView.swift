@@ -13,22 +13,16 @@ struct DetailExperienceView: View {
     
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
-      
+        
+        HStack(alignment: .top, spacing:
+            5){
+            VStack(alignment: .center, spacing:20){
             Image(activity.image)
                 .resizable()
-                .frame(width: 370, height: 250)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .padding()
+                .frame(width: 150, height: 150)
                 
-        
-            Text(activity.name)
-                .font(.title)
-                .fontWeight(.semibold)
             
-            Text(activity.description)
-                .tracking(-1)
-                .multilineTextAlignment(.center)
-           // MARK. ADDING BUTTON TO BOOK THE TRIP
             Button(action: {
                 withAnimation{
                 print("Added to the booking list")
@@ -36,7 +30,7 @@ struct DetailExperienceView: View {
             }){
                 RoundedRectangle(cornerRadius: 30)
                     .fill(Color.blue)
-                    .frame(width: 200, height: 70)
+                    .frame(width: 120, height: 60)
                 
                     .font(.title)
                     .overlay(HStack{
@@ -48,12 +42,32 @@ struct DetailExperienceView: View {
                             
                     })
             }
+            }
+            
+               
+            VStack(alignment: .center,spacing: 10){
+                Text(activity.name)
+                .font(.title)
+                .fontWeight(.semibold)
+                
+            
+            
+            Text(activity.description)
+                .tracking(-1)
+                .multilineTextAlignment(.leading)
+                
+            }.padding()
+            
+        }
+         
+           
+                
+        }
         
         
             
-            }
     }
-}
+
 
 struct DetailExperienceView_Previews: PreviewProvider {
     static var previews: some View {

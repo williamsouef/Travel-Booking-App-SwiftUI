@@ -20,8 +20,8 @@ struct Hotels : Identifiable {
 }
 
 
-var hotel1 = Hotels(name: "Negresco", description: "Majestic hotels in Nice", image: "Negresco", suitRoom: "yes",price: 250)
-var hotel2 = Hotels(name: "Las Vegas", description: "Luxury Hotel Up to the casino", image: "Luxor", suitRoom: "yes",price: 200)
+var hotel1 = Hotels(name: "Negresco", description: "The Hotel Negresco is a hotel located on the promenade des anglais. it was named by Henri Negresco, its frontopened on the opposite side of Mediterranean Sea", image: "Negresco", suitRoom: "yes",price: 250)
+var hotel2 = Hotels(name: "Las Vegas", description: "This chic casino hotel is 4 miles from McCarran international Airport, 1 mile from the Las Vegas Convention Center and 3 miles from the Fremont Street Experience Shopping", image: "Luxor", suitRoom: "yes",price: 200)
 var hotel3 = Hotels(name: "Tokyo", description: "Minimalist Hotel ", image: "Tokyo", suitRoom: nil,price: 100)
 var hotel4 = Hotels(name: "Sydney", description: "Wonderful Hotel", image: "sydney-1", suitRoom: "Yes",price: 200)
 var hotel5 = Hotels(name: "Kenya", description: "Piece of paradise Hotel ", image: "Kenya", suitRoom: "Yes",price: 150)

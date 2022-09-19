@@ -27,7 +27,7 @@ struct PlanTripView: View {
                     
                     }
                 }
-                .navigationBarTitle("Plan your Experience")
+                .navigationBarTitle("Experience your Trip")
             }
             
         }
