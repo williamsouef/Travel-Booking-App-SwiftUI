@@ -29,7 +29,7 @@ struct ListScreen : View {
                          .font(.title)
                         .fontWeight(.semibold)
 
-                     Text("\(Hotels.description)")
+                    
                       
             }
                   Spacer()
