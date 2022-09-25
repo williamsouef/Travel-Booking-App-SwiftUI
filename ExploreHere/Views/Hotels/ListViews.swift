@@ -11,7 +11,7 @@ import SwiftUI
 struct ListScreen : View {
     
  @Binding var ListScreenisShowing : Bool
- @State var hotelList : [Hotels] = [hotel1,hotel2,hotel3,hotel4,hotel5,hotel6]
+ @StateObject var type = HotelType()
 
     
     var body : some View {
@@ -43,6 +43,7 @@ struct ListScreen : View {
         }
             }
         .navigationBarTitle("Hotels")
+        .environmentObject(type)
         
         }
         

@@ -11,16 +11,19 @@ struct ContentView: View {
     
     @State private var PlanTripViewIsShowing = false
     @State private var ListScreenIsShowing = false
+    @State private var selection = 1
     var body: some View {
         VStack{
           
-            TabView{
+            TabView(selection:$selection){
+                
                 Homescreen()
                     .tabItem {
                         Image(systemName: "house")
                         Text("Home")
                             .fontWeight(.black)
                     }
+                    .tag(3)
                 ListScreen(ListScreenisShowing: $ListScreenIsShowing)
                     .tabItem{
                         Image(systemName: "bed.double")
@@ -28,6 +31,7 @@ struct ContentView: View {
                         Text("Hotel")
                     }
                     .badge(hotelList.count)
+                    .tag(0)
                 PlanTripView(PlanTripViewIsShowing: $PlanTripViewIsShowing)
                     .tabItem {
                         Image(systemName:"figure.walk")
@@ -35,10 +39,12 @@ struct ContentView: View {
                         Text ("Activities")
                     }
                     .badge(activities.count)
+                    .tag(1)
+              
                   
             }  .accentColor(.black)
     
-            
+           
             
         
         }

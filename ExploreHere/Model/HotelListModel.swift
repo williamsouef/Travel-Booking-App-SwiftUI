@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
 
 
 struct Hotels : Identifiable {
