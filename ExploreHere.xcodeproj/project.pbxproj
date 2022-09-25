@@ -26,6 +26,7 @@
 		B3EC7ECC28D60207001E276E /* DetailExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ECB28D60207001E276E /* DetailExperienceView.swift */; };
 		B3EC7ED028D74A27001E276E /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ECF28D74A27001E276E /* FavoriteButtonView.swift */; };
 		B3EC7ED528E09059001E276E /* HotelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED428E09059001E276E /* HotelType.swift */; };
+		B3EC7ED728E0946D001E276E /* TripType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED628E0946D001E276E /* TripType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		B3EC7ECB28D60207001E276E /* DetailExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExperienceView.swift; sourceTree = "<group>"; };
 		B3EC7ECF28D74A27001E276E /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		B3EC7ED428E09059001E276E /* HotelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelType.swift; sourceTree = "<group>"; };
+		B3EC7ED628E0946D001E276E /* TripType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				B31D475828B5243400A75FC1 /* Constants.swift */,
 				B3EC7EC528D3C744001E276E /* PlanTripModel.swift */,
 				B3EC7ED428E09059001E276E /* HotelType.swift */,
+				B3EC7ED628E0946D001E276E /* TripType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				B3EC7ECC28D60207001E276E /* DetailExperienceView.swift in Sources */,
 				B31D475E28BCF6CF00A75FC1 /* HotelListModel.swift in Sources */,
 				B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */,
+				B3EC7ED728E0946D001E276E /* TripType.swift in Sources */,
 				B31D475928B5243400A75FC1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

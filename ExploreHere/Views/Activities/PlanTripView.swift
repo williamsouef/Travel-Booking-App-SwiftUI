@@ -10,7 +10,7 @@ import SwiftUI
 struct PlanTripView: View {
     
 @Binding var PlanTripViewIsShowing : Bool
-@State var activities : [Activities] = [surfing,hiking,kayaking,guideTour]
+@StateObject var tripType = TripType()
     
     var body: some View {
         
@@ -28,6 +28,7 @@ struct PlanTripView: View {
                     }
                 }
                 .navigationBarTitle("Experience your Trip")
+                .environmentObject(tripType)
             }
             
         }
