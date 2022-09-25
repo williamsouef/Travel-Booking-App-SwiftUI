@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlanTripView: View {
-    
+
 @Binding var PlanTripViewIsShowing : Bool
 @StateObject var tripType = TripType()
     
@@ -27,13 +27,25 @@ struct PlanTripView: View {
                     
                     }
                 }
-                .navigationBarTitle("Experience your Trip")
-                .environmentObject(tripType)
+                .navigationBarTitle(" Trips")
+                .toolbar{
+                    NavigationLink{
+                        CartView()
+                            .environmentObject(tripType)
+                    }label: {
+                        CartButton(numberOfItems: tripType.activities.count)
+                            .environmentObject(tripType)
+                    }
+                   
+                        
+                }
+                
             }
             
-        }
+        }.accentColor(.black)
         
-            
+        
+       
         
         
         }
@@ -45,5 +57,6 @@ struct PlanTripView_Previews: PreviewProvider {
     static var previews: some View {
         
         PlanTripView(PlanTripViewIsShowing: PlanTripViewIsShowing)
+            .environmentObject(TripType())
     }
 }

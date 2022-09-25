@@ -27,6 +27,9 @@
 		B3EC7ED028D74A27001E276E /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ECF28D74A27001E276E /* FavoriteButtonView.swift */; };
 		B3EC7ED528E09059001E276E /* HotelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED428E09059001E276E /* HotelType.swift */; };
 		B3EC7ED728E0946D001E276E /* TripType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED628E0946D001E276E /* TripType.swift */; };
+		B3EC7ED928E0A75C001E276E /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED828E0A75C001E276E /* CartButton.swift */; };
+		B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EDA28E0A827001E276E /* CartView.swift */; };
+		B3EC7EDD28E0CA61001E276E /* ItemRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EDC28E0CA61001E276E /* ItemRows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		B3EC7ECF28D74A27001E276E /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		B3EC7ED428E09059001E276E /* HotelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelType.swift; sourceTree = "<group>"; };
 		B3EC7ED628E0946D001E276E /* TripType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripType.swift; sourceTree = "<group>"; };
+		B3EC7ED828E0A75C001E276E /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		B3EC7EDA28E0A827001E276E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		B3EC7EDC28E0CA61001E276E /* ItemRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				B31D474228B51AF900A75FC1 /* ContentView.swift */,
+				B3EC7ED828E0A75C001E276E /* CartButton.swift */,
+				B3EC7EDA28E0A827001E276E /* CartView.swift */,
+				B3EC7EDC28E0CA61001E276E /* ItemRows.swift */,
 				B3EC7ECF28D74A27001E276E /* FavoriteButtonView.swift */,
 				B3EC7ED328D74B15001E276E /* Welcome */,
 				B3EC7ED228D74AC6001E276E /* Hotels */,
@@ -239,6 +248,9 @@
 				B3EC7EC628D3C744001E276E /* PlanTripModel.swift in Sources */,
 				B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */,
 				B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */,
+				B3EC7EDD28E0CA61001E276E /* ItemRows.swift in Sources */,
+				B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */,
+				B3EC7ED928E0A75C001E276E /* CartButton.swift in Sources */,
 				B31D475128B5235500A75FC1 /* UserViews.swift in Sources */,
 				B3EC7ECA28D5DBBA001E276E /* ExperiencesButton.swift in Sources */,
 				B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */,

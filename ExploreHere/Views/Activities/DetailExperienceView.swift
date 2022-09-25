@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct DetailExperienceView: View {
-    
-    var activity : Activities = activities[0]
+    var activity : Activities
+    @EnvironmentObject var tripType : TripType
     
     
     var body: some View {
@@ -23,11 +23,14 @@ struct DetailExperienceView: View {
                 .frame(width: 150, height: 150)
                 
             
-            Button(action: {
-                withAnimation{
-                print("Added to the booking list")
-                }
-            }){
+           
+             
+                Button(action: {
+                    withAnimation{
+                        tripType.addActivities(newItem: activity)
+                    }
+                })
+           {
                 RoundedRectangle(cornerRadius: 30)
                     .fill(Color.blue)
                     .frame(width: 120, height: 60)
@@ -41,7 +44,7 @@ struct DetailExperienceView: View {
                             )
                             
                     })
-            }
+            }.environmentObject(TripType())
             }
             
                
@@ -60,7 +63,7 @@ struct DetailExperienceView: View {
             
         }
          
-           
+            .environmentObject(TripType())
                 
         }
         
@@ -70,7 +73,9 @@ struct DetailExperienceView: View {
 
 
 struct DetailExperienceView_Previews: PreviewProvider {
+    static let tripTide = TripType()
     static var previews: some View {
         DetailExperienceView(activity: activities[0])
+            .environmentObject(tripTide)
     }
 }
