@@ -26,9 +26,9 @@ struct DetailExperienceView: View {
            
              
                 Button(action: {
-                    withAnimation{
+                    
                         tripType.addActivities(newItem: activity)
-                    }
+                    
                 })
            {
                 RoundedRectangle(cornerRadius: 30)
@@ -44,7 +44,7 @@ struct DetailExperienceView: View {
                             )
                             
                     })
-            }.environmentObject(TripType())
+            }
             }
             
                
@@ -63,7 +63,7 @@ struct DetailExperienceView: View {
             
         }
          
-            .environmentObject(TripType())
+            
                 
         }
         
@@ -74,6 +74,7 @@ struct DetailExperienceView: View {
 
 struct DetailExperienceView_Previews: PreviewProvider {
     static let tripTide = TripType()
+    @Namespace static var namespace
     static var previews: some View {
         DetailExperienceView(activity: activities[0])
             .environmentObject(tripTide)

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CartButton: View {
     
-    var numberOfItems : Int = 0
+    var numberOfItems : Int 
     
     var body: some View {
         ZStack(alignment: .topTrailing){
@@ -29,6 +29,6 @@ struct CartButton: View {
 
 struct CartButton_Previews: PreviewProvider {
     static var previews: some View {
-        CartButton(numberOfItems: 3)
+        CartButton(numberOfItems: 1)
     }
 }

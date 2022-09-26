@@ -93,10 +93,10 @@
 		B31D473F28B51AF900A75FC1 /* ExploreHere */ = {
 			isa = PBXGroup;
 			children = (
-				B3EC7EDE28E18C17001E276E /* Model View */,
 				B31D474028B51AF900A75FC1 /* ExploreHereApp.swift */,
 				B31D474428B51AFA00A75FC1 /* Assets.xcassets */,
 				B31D474628B51AFA00A75FC1 /* Preview Content */,
+				B3EC7EDE28E18C17001E276E /* Model View */,
 				B31D476028BCF71E00A75FC1 /* Model */,
 				B31D475F28BCF6F400A75FC1 /* Views */,
 			);
