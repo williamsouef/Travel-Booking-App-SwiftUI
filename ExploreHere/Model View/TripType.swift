@@ -7,6 +7,8 @@
 
 import Foundation
 
+//MARK: MODEL VIEW 
+
 class TripType : ObservableObject {
     
     @Published var activities : [Activities] = []

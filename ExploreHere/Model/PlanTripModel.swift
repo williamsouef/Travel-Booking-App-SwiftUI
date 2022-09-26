@@ -13,7 +13,7 @@ import Foundation
 // ADD THE DATA TO DISPLAY THE SUBCATEGORIES OF EXPERIENCE
 // More info + register button
 
-
+//MARK: MODEL
 struct Activities : Identifiable {
     var id = UUID()
     let name : String

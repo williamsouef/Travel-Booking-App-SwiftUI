@@ -17,8 +17,7 @@ struct CartView: View {
             if tripType.activities.count > 0 {
                 ForEach(tripType.activities, id: \.id) {
                     activities in
-                    ItemRows(activity: activities)
-                }
+                    ItemRows(activity: activities)}
             } else {
         Text("Your cart is empty!")
             }

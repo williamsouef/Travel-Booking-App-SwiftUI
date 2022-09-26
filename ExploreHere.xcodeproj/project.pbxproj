@@ -93,6 +93,7 @@
 		B31D473F28B51AF900A75FC1 /* ExploreHere */ = {
 			isa = PBXGroup;
 			children = (
+				B3EC7EDE28E18C17001E276E /* Model View */,
 				B31D474028B51AF900A75FC1 /* ExploreHereApp.swift */,
 				B31D474428B51AFA00A75FC1 /* Assets.xcassets */,
 				B31D474628B51AFA00A75FC1 /* Preview Content */,
@@ -131,8 +132,6 @@
 				B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */,
 				B31D475828B5243400A75FC1 /* Constants.swift */,
 				B3EC7EC528D3C744001E276E /* PlanTripModel.swift */,
-				B3EC7ED428E09059001E276E /* HotelType.swift */,
-				B3EC7ED628E0946D001E276E /* TripType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +165,15 @@
 				B31D474E28B5230D00A75FC1 /* Roundviews.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B3EC7EDE28E18C17001E276E /* Model View */ = {
+			isa = PBXGroup;
+			children = (
+				B3EC7ED428E09059001E276E /* HotelType.swift */,
+				B3EC7ED628E0946D001E276E /* TripType.swift */,
+			);
+			path = "Model View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -34,6 +34,7 @@ struct ContentView: View {
                     .badge(hotelList.count)
                     .tag(0)
                 PlanTripView( PlanTripViewIsShowing: $PlanTripViewIsShowing)
+                    .environmentObject(tripType)
                   
                     .tabItem {
                         Image(systemName:"figure.walk")
@@ -57,6 +58,7 @@ struct ContentView_Previews: PreviewProvider {
     
     static var previews: some View {
         ContentView()
+            .environmentObject(TripType())
             
     }
 }
