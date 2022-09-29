@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
 
+//MARK: MODEL
 
 struct Hotels : Identifiable {
    

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct PlanTripView: View {
-    
+
 @Binding var PlanTripViewIsShowing : Bool
-@State var activities : [Activities] = [surfing,hiking,kayaking,guideTour]
+@StateObject var tripType = TripType()
     
     var body: some View {
         
@@ -27,12 +27,25 @@ struct PlanTripView: View {
                     
                     }
                 }
-                .navigationBarTitle("Experience your Trip")
+                .navigationBarTitle(" Trips")
+                .toolbar{
+                    NavigationLink{
+                        CartView()
+                            .environmentObject(tripType)
+                    }label: {
+                        CartButton(numberOfItems: tripType.activities.count)
+                            .environmentObject(tripType)
+                    }
+                   
+                        
+                }
+                
             }
             
-        }
+        }.accentColor(.black)
         
-            
+        
+       
         
         
         }
@@ -44,5 +57,6 @@ struct PlanTripView_Previews: PreviewProvider {
     static var previews: some View {
         
         PlanTripView(PlanTripViewIsShowing: PlanTripViewIsShowing)
+            .environmentObject(TripType())
     }
 }
