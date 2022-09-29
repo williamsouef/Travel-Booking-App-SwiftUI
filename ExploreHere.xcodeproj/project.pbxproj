@@ -59,6 +59,7 @@
 		B3EC7ED828E0A75C001E276E /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		B3EC7EDA28E0A827001E276E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		B3EC7EDC28E0CA61001E276E /* ItemRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRows.swift; sourceTree = "<group>"; };
+		B3EEEE8F28E6067E00807483 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		B31D473428B51AF900A75FC1 = {
 			isa = PBXGroup;
 			children = (
+				B3EEEE8F28E6067E00807483 /* README.md */,
 				B3850AA128C636D8004DA281 /* homeworkweek3.playground */,
 				B31D476128BFE43500A75FC1 /* MyPlayground.playground */,
 				B31D473F28B51AF900A75FC1 /* ExploreHere */,
