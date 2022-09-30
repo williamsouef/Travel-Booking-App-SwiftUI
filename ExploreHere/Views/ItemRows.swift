@@ -21,6 +21,7 @@ struct ItemRows: View {
             VStack(alignment: .leading, spacing: 10){
                 Text(activity.name)
                     .bold()
+                Text("\(activity.price)$")
             }
         }
         .padding(.horizontal)

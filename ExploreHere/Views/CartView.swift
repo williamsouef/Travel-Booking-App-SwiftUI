@@ -21,8 +21,7 @@ struct CartView: View {
             } else {
         Text("Your cart is empty!")
             }
-    }
-        .navigationTitle(Text("My Cart"))
+    }.navigationTitle(Text("My Cart"))
 }
 
 struct CartView_Previews: PreviewProvider {

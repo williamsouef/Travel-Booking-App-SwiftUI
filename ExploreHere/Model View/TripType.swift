@@ -18,6 +18,7 @@ class TripType : ObservableObject {
     func addActivities(newItem: Activities) {
        
         activities.append(newItem)
+        total += newItem.price
     }
     
     func removeFromCart (newItem: Activities){

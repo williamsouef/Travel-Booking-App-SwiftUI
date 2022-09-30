@@ -10,7 +10,10 @@ import SwiftUI
 //MARK: MODEL VIEW
 
 class HotelType : ObservableObject{
-    @Published var hotelList : [Hotels] = [hotel1,hotel2,hotel3,hotel4,hotel5,hotel6]
+    @Published var hotelList : [Hotels] = []
+    
+
+    
 }
 
 
