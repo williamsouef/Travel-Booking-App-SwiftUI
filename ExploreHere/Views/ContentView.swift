@@ -46,29 +46,32 @@ struct ContentView: View {
                      CartView()
                     .environmentObject(tripType)
                     .tabItem{
-                    CartButton(numberOfItems: tripType.activities.count)
+                        CartButton(numberOfItems: tripType.activities.count)
+                        Text ("Cart")
+                            
                     }
-              
+                                  
                   
             }
             
         
             .accentColor(.black)
-           // .toolbar{
-           //     NavigationLink{
-           //         CartView()
-            //            .environmentObject(tripType)
-            //    }label: {
-            //        CartButton(numberOfItems: tripType.activities.count)
-            //            .environmentObject(tripType)
-             //   }
-               
-                    
-           // }
+        
            
               
         
         }
+       //  .toolbar{
+        //     NavigationLink{
+        //        CartView()
+        //            .environmentObject(tripType)
+        //    }label: {
+        //         CartButton(numberOfItems: tripType.activities.count)
+        //            .environmentObject(tripType)
+           // }
+            
+                 
+       //  }
     }
 }
 

@@ -11,6 +11,7 @@ struct PlanTripView: View {
 
 
 @StateObject var tripType = TripType()
+
     
     var body: some View {
         

@@ -21,6 +21,10 @@ struct CartView: View {
             } else {
         Text("Your cart is empty!")
             }
+            Text("Total price is")
+            Spacer()
+            Text("$\(tripType.total)")
+            // add total activities 
     }.navigationTitle(Text("My Cart"))
 }
 

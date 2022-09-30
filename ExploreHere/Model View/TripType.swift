@@ -25,5 +25,5 @@ class TripType : ObservableObject {
         
         activities = activities.filter{ $0.id != newItem.id}
     }
-    
+    // add the function to remove
 }
