@@ -12,6 +12,7 @@ import Foundation
 class TripType : ObservableObject {
     
     @Published var activities : [Activities] = []
+    @Published var places : [Places] = []
     @Published var total : Int = 0
     
     

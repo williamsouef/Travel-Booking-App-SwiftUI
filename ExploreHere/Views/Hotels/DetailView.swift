@@ -17,8 +17,9 @@ struct DetailView: View {
       
             Image(hotel.image)
                 .resizable()
-                .frame(width: 370, height: 250)
+                .frame(width: 350,height: 350)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
+               
         
             Text(hotel.name)
                 .font(.title)

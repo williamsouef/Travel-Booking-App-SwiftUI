@@ -9,22 +9,32 @@ import SwiftUI
 
 struct DetailExperienceView: View {
     var activity : Activities
+   
     @EnvironmentObject var tripType : TripType
     
     
     var body: some View {
-        
-        HStack(alignment: .top, spacing:
-            5){
-            VStack(alignment: .center, spacing:20){
+    
+            VStack(alignment: .leading, spacing:10){
             Image(activity.image)
                 .resizable()
-                .padding()
-                .frame(width: 150, height: 150)
+                .frame(maxWidth: 500, maxHeight: 500)
                 
-            
+              
+                    Text(activity.name)
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .padding()
+                
+                
+                Text(activity.description)
+                    .tracking(-1)
+                    .multilineTextAlignment(.leading)
+                    
+                .padding()
            
-             
+                HStack(alignment: .top){
+                    Spacer()
                 Button(action: {
                     
                         tripType.addActivities(newItem: activity)
@@ -43,25 +53,15 @@ struct DetailExperienceView: View {
                             .foregroundColor(Color.white
                             )
                             
-                    })
-            }
-            }
-            
+                    }).padding()
                
-            VStack(alignment: .center,spacing: 10){
-                Text(activity.name)
-                .font(.title)
-                .fontWeight(.semibold)
+           }
+                    Spacer()
+            }
                 
-            
-            
-            Text(activity.description)
-                .tracking(-1)
-                .multilineTextAlignment(.leading)
-                
-            }.padding()
-            
-        }
+            }
+    
+            .ignoresSafeArea()
          
             
                 

@@ -46,5 +46,7 @@ var gorgesDuVerdon = Places(name: "gorges du verdon", description: "kayak", imag
 var hossegor = Places(name: "hossegor", description: "surf", image: "")
 var mercantour = Places(name: "Mercantour", description: "hiking", image: "")
 
+var places : [Places]  = [gorgesDuVerdon,hossegor,mercantour]
+
 
 

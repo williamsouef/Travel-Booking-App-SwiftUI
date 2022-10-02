@@ -24,8 +24,7 @@ struct CartView: View {
             Text("Total price is")
             Spacer()
             Text("$\(tripType.total)")
-            // add total activities 
-    }.navigationTitle(Text("My Cart"))
+    }
 }
 
 struct CartView_Previews: PreviewProvider {

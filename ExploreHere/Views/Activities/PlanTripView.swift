@@ -22,15 +22,13 @@ struct PlanTripView: View {
             VStack(alignment: .center){
                 List(activities) { activity in
                    
-                NavigationLink(destination: DetailExperienceView(activity: activity)){
+                    NavigationLink(destination: DetailExperienceView(activity: activity)){
                     ExperiencesButton(name: activity.name, image: activity.image)
                         .padding(55)
-                    
+                
                     }
                 }
                 .navigationBarTitle(" Trips")
-                
-                
             }
             
         }.accentColor(.black)
