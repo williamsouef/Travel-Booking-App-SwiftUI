@@ -52,6 +52,7 @@ struct DetailView: View {
             
             
         }.padding()
+          
             
         }
         
