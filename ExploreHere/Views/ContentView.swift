@@ -43,11 +43,11 @@ struct ContentView: View {
                     .tag(1)
                      CartView()
                     .environmentObject(tripType)
-                    .tabItem{
+                    .tabItem{ 
                         CartButton(numberOfItems: tripType.activities.count)
                         Text ("Cart")
                             
-                    }
+                    }.badge(activities.count)
                                   
                   
             }

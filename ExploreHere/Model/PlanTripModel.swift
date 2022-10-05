@@ -8,10 +8,7 @@
 import Foundation
 
 
-// ADD THE DATA TO DISPLAY THE CATEGORIES OF EXPERIENCE
-// Name,description,image,prices
-// ADD THE DATA TO DISPLAY THE SUBCATEGORIES OF EXPERIENCE
-// More info + register button
+// ADD THE QUANTITIES
 
 //MARK: MODEL
 struct Activities : Identifiable {

@@ -30,6 +30,7 @@
 		B3EC7ED928E0A75C001E276E /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED828E0A75C001E276E /* CartButton.swift */; };
 		B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EDA28E0A827001E276E /* CartView.swift */; };
 		B3EC7EDD28E0CA61001E276E /* ItemRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EDC28E0CA61001E276E /* ItemRows.swift */; };
+		B3EEEE9128ED587700807483 /* CarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EEEE9028ED587700807483 /* CarsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		B3EC7EDA28E0A827001E276E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		B3EC7EDC28E0CA61001E276E /* ItemRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRows.swift; sourceTree = "<group>"; };
 		B3EEEE8F28E6067E00807483 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B3EEEE9028ED587700807483 /* CarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */,
 				B31D475828B5243400A75FC1 /* Constants.swift */,
 				B3EC7EC528D3C744001E276E /* PlanTripModel.swift */,
+				B3EEEE9028ED587700807483 /* CarsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EEEE9128ED587700807483 /* CarsModel.swift in Sources */,
 				B31D474328B51AF900A75FC1 /* ContentView.swift in Sources */,
 				B31D474128B51AF900A75FC1 /* ExploreHereApp.swift in Sources */,
 				B3EC7ED028D74A27001E276E /* FavoriteButtonView.swift in Sources */,

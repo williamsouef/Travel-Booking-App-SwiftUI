@@ -25,6 +25,7 @@ class TripType : ObservableObject {
     func removeFromCart (newItem: Activities){
         
         activities = activities.filter{ $0.id != newItem.id}
+        total -= newItem.price
     }
-    // add the function to remove
+    
 }
