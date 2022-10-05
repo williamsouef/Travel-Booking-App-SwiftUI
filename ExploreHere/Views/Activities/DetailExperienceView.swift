@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailExperienceView: View {
+   
     var activity : Activities
    
     @EnvironmentObject var tripType : TripType
@@ -16,11 +17,15 @@ struct DetailExperienceView: View {
     var body: some View {
     
             VStack(alignment: .leading, spacing:10){
+                
+                HStack(alignment: .top){
             Image(activity.image)
                 .resizable()
-                .frame(maxWidth: 500, maxHeight: 500)
                 
-              
+                .frame(maxWidth: 500, maxHeight: 300)
+                
+                }
+                
                     Text(activity.name)
                     .font(.title)
                     .fontWeight(.semibold)
@@ -37,8 +42,8 @@ struct DetailExperienceView: View {
                     Spacer()
                 Button(action: {
                     
-                        tripType.addActivities(newItem: activity)
-                    
+                    tripType.addActivities(newItem: activity)
+                        
                 })
            {
                 RoundedRectangle(cornerRadius: 30)

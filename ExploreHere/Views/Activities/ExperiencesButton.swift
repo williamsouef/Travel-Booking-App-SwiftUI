@@ -14,20 +14,21 @@ struct ExperiencesButton: View {
     
     var body: some View {
         
-        ZStack{
+        ZStack(alignment: .bottom){
         Image(image)
-                .frame(width: 200, height: 150)
+                .frame(width: 150, height: 150)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .blur(radius: 0.5)
                 .shadow(color: .gray, radius: 20, x: 0, y: 10)
                 .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color("ButtonCloseBackgroundColor"), lineWidth: Constants.General.lineWidth))
             
-                
-            
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 140, height: 30)
+                .overlay(
             Text(name)
-                .font(.largeTitle)
+                .font(.caption)
                 .fontWeight(.black)
-                .foregroundColor(.white)
+                .foregroundColor(.white))
                 
         }
     }

@@ -39,9 +39,9 @@ struct Places : Identifiable {
     
 }
 
-var gorgesDuVerdon = Places(name: "gorges du verdon", description: "kayak", image: "")
-var hossegor = Places(name: "hossegor", description: "surf", image: "")
-var mercantour = Places(name: "Mercantour", description: "hiking", image: "")
+var gorgesDuVerdon = Places(name: "gorges du verdon", description: "kayak", image: "kayaking")
+var hossegor = Places(name: "hossegor", description: "surf", image: "surf")
+var mercantour = Places(name: "Mercantour", description: "hiking", image: "hiking")
 
 var places : [Places]  = [gorgesDuVerdon,hossegor,mercantour]
 

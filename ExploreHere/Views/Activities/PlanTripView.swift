@@ -18,9 +18,17 @@ struct PlanTripView: View {
         
         NavigationView{
           
-            
+            ZStack{
+                
+    // ADD A BACKGROUND
             VStack(alignment: .center){
-                List(activities) { activity in
+                LazyVGrid(
+                  columns: [
+                    GridItem(.flexible(minimum: 100, maximum: 260)),
+                    GridItem(.flexible(minimum: 100, maximum: 260))
+                  ], spacing: 10
+                ) {
+                    ForEach(activities, id: \.id) { activity in
                    
                     NavigationLink(destination: DetailExperienceView(activity: activity)){
                     ExperiencesButton(name: activity.name, image: activity.image)
@@ -28,14 +36,16 @@ struct PlanTripView: View {
                 
                     }
                 }
+                }
                 .navigationBarTitle(" Trips")
+
             }
             
         }.accentColor(.black)
         
         
        
-        
+        }
         
         }
 }
@@ -47,5 +57,6 @@ struct PlanTripView_Previews: PreviewProvider {
         
         PlanTripView()
             .environmentObject(TripType())
+            .previewInterfaceOrientation(.portrait)
     }
 }
