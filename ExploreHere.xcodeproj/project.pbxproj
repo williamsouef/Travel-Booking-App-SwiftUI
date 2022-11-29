@@ -31,6 +31,8 @@
 		B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EDA28E0A827001E276E /* CartView.swift */; };
 		B3EC7EDD28E0CA61001E276E /* ItemRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EDC28E0CA61001E276E /* ItemRows.swift */; };
 		B3EEEE9128ED587700807483 /* CarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EEEE9028ED587700807483 /* CarsModel.swift */; };
+		B3FA5EA929367725006CA051 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5EA829367725006CA051 /* TabModel.swift */; };
+		B3FA5EAB29367847006CA051 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5EAA29367847006CA051 /* TabsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		B3EC7EDC28E0CA61001E276E /* ItemRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRows.swift; sourceTree = "<group>"; };
 		B3EEEE8F28E6067E00807483 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B3EEEE9028ED587700807483 /* CarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsModel.swift; sourceTree = "<group>"; };
+		B3FA5EA829367725006CA051 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		B3FA5EAA29367847006CA051 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B31D474228B51AF900A75FC1 /* ContentView.swift */,
+				B3FA5EAA29367847006CA051 /* TabsView.swift */,
 				B3EC7ED828E0A75C001E276E /* CartButton.swift */,
 				B3EC7EDA28E0A827001E276E /* CartView.swift */,
 				B3EC7EDC28E0CA61001E276E /* ItemRows.swift */,
@@ -136,6 +141,7 @@
 				B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */,
 				B31D475828B5243400A75FC1 /* Constants.swift */,
 				B3EC7EC528D3C744001E276E /* PlanTripModel.swift */,
+				B3FA5EA829367725006CA051 /* TabModel.swift */,
 				B3EEEE9028ED587700807483 /* CarsModel.swift */,
 			);
 			path = Model;
@@ -257,10 +263,12 @@
 				B3EC7ED028D74A27001E276E /* FavoriteButtonView.swift in Sources */,
 				B3EC7EC428D3C5C2001E276E /* PlanTripView.swift in Sources */,
 				B3A0191D28CC7C49000D2A27 /* ListViews.swift in Sources */,
+				B3FA5EAB29367847006CA051 /* TabsView.swift in Sources */,
 				B3EC7ED528E09059001E276E /* HotelType.swift in Sources */,
 				B31D474F28B5230D00A75FC1 /* Roundviews.swift in Sources */,
 				B3EC7EC628D3C744001E276E /* PlanTripModel.swift in Sources */,
 				B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */,
+				B3FA5EA929367725006CA051 /* TabModel.swift in Sources */,
 				B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */,
 				B3EC7EDD28E0CA61001E276E /* ItemRows.swift in Sources */,
 				B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */,

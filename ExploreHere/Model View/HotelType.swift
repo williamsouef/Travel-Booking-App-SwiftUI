@@ -12,8 +12,6 @@ import SwiftUI
 class HotelType : ObservableObject{
     @Published var hotelList : [Hotels] = []
     
-
-    
 }
 
 

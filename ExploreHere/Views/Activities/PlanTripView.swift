@@ -26,13 +26,14 @@ struct PlanTripView: View {
                   columns: [
                     GridItem(.flexible(minimum: 100, maximum: 260)),
                     GridItem(.flexible(minimum: 100, maximum: 260))
-                  ], spacing: 10
-                ) {
+                  ], spacing: 30
+                )
+                {
                     ForEach(activities, id: \.id) { activity in
                    
                     NavigationLink(destination: DetailExperienceView(activity: activity)){
                     ExperiencesButton(name: activity.name, image: activity.image)
-                        .padding(55)
+                        .padding(35)
                 
                     }
                 }

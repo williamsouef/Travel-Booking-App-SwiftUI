@@ -16,57 +16,62 @@ struct DetailExperienceView: View {
     
     var body: some View {
     
+        VStack {
             VStack(alignment: .leading, spacing:10){
-                
-                HStack(alignment: .top){
-            Image(activity.image)
-                .resizable()
-                
-                .frame(maxWidth: 500, maxHeight: 300)
-                
-                }
-                
-                    Text(activity.name)
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .padding()
-                
-                
-                Text(activity.description)
-                    .tracking(-1)
-                    .multilineTextAlignment(.leading)
                     
-                .padding()
-           
-                HStack(alignment: .top){
-                    Spacer()
-                Button(action: {
+                    HStack(alignment: .top){
+                Image(activity.image)
+                    .resizable()
                     
-                    tripType.addActivities(newItem: activity)
+                    .frame(maxWidth: 500, maxHeight: 300)
+                    
+                    }
+                    
+                        Text(activity.name)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .padding()
+                    
+                    
+                    Text(activity.description)
+                        .tracking(-1)
+                        .multilineTextAlignment(.leading)
                         
-                })
-           {
-                RoundedRectangle(cornerRadius: 30)
-                    .fill(Color.blue)
-                    .frame(width: 120, height: 60)
-                
-                    .font(.title)
-                    .overlay(HStack{
-                      
-                        Text("Register")
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.white
-                            )
-                            
-                    }).padding()
+                    .padding()
                
-           }
-                    Spacer()
-            }
-                
-            }
-    
+                    HStack(alignment: .top){
+                        Spacer()
+                    Button(action: {
+                        
+                        tripType.addActivities(newItem: activity)
+                            
+                    })
+               {
+                    RoundedRectangle(cornerRadius: 30)
+                        .fill(Color.blue)
+                        .frame(width: 120, height: 60)
+                    
+                        .font(.title)
+                        .overlay(HStack{
+                          
+                            Text("Register")
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color.white
+                                )
+                                
+                        }).padding()
+                   
+               }
+                        Spacer()
+                }
+                    
+                }
+        
             .ignoresSafeArea()
+            
+                .padding()
+            
+        }
          
             
                 

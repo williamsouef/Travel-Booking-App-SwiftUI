@@ -20,14 +20,14 @@ struct ExperiencesButton: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .blur(radius: 0.5)
                 .shadow(color: .gray, radius: 20, x: 0, y: 10)
-                .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color("ButtonCloseBackgroundColor"), lineWidth: Constants.General.lineWidth))
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color("AccentColor"), lineWidth: Constants.General.lineWidth))
             
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: 140, height: 30)
                 .overlay(
             Text(name)
                 .font(.caption)
-                .fontWeight(.black)
+                .fontWeight(.bold)
                 .foregroundColor(.white))
                 
         }

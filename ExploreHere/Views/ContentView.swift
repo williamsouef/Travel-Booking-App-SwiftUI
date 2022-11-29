@@ -16,7 +16,7 @@ struct ContentView: View {
         VStack{
             
             TabView(selection:$selection){
-                
+             
                 Homescreen()
                     .tabItem {
                         Image(systemName: "house")
@@ -41,13 +41,13 @@ struct ContentView: View {
                     }
                     
                     .tag(1)
-                     CartView()
+                CartView()
                     .environmentObject(tripType)
                     .tabItem{ 
                         CartButton(numberOfItems: tripType.activities.count)
                         Text ("Cart")
                             
-                    }.badge(activities.count)
+                    }
                                   
                   
             }
