@@ -7,10 +7,17 @@
 
 import SwiftUI
 
-struct TabsView: View {
+struct TabsView: View,Hashable{
+   
     var body: some View {
+        VStack{
+            
+           
+          
         
-        
+            
+  
+                
         TabsLayoutView()
             .padding()
             .background(
@@ -18,12 +25,16 @@ struct TabsView: View {
             .fill(.white)
     .frame(height: 70)
     .shadow(radius: 60))
-        
+            
+            
+        }
     }
-}
+    }
 
 
-fileprivate struct TabsLayoutView: View {
+
+ struct TabsLayoutView: View {
+    @AppStorage("selectedBar") var selectedBar : Tab = .cart
     @State var selectedTab: Tab = .cart
     @Namespace var namespace
     
@@ -53,20 +64,20 @@ private struct TabButton: View {
                 selectedTab = tab
             }
             
-            selectedOffset = -60
-            if tab < selectedTab {
-                rotationAngle += 360
-            } else {
-                rotationAngle -= 360
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                selectedOffset = 0
-                if tab < selectedTab {
-                    rotationAngle += 720
-                } else {
-                    rotationAngle -= 720
-                }
-            }
+            //selectedOffset = -60
+            //if tab < selectedTab {
+            //    rotationAngle += 360
+           // } else {
+           //     rotationAngle -= 360
+           // }
+           // DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+           //     selectedOffset = 0
+           //     if tab < selectedTab {
+           //         rotationAngle += 720
+           //     } else {
+           //         rotationAngle -= 720
+           //     }
+            //}
         } label: {
             ZStack {
                 if isSelected {
@@ -81,7 +92,7 @@ private struct TabButton: View {
                         .rotationEffect(.degrees(rotationAngle))
                         .scaleEffect(isSelected ? 1.5 : 0.9)
                         .animation(.easeInOut, value: rotationAngle)
-                        .opacity(isSelected ? 1 : 0.7)
+                        .opacity(isSelected ? 1 : 0.9)
                         .padding(.leading, isSelected ? 0 : 0)
                         .padding(.horizontal, selectedTab != tab ? 5 : 0)
                         .offset(y: selectedOffset)
@@ -96,7 +107,7 @@ private struct TabButton: View {
 struct TabsView_Previews: PreviewProvider {
     static var previews: some View {
         TabsView()
-            .frame(height: 70)
-            .padding(.horizontal)
+            .frame( height: 80)
+          
     }
 }
