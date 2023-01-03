@@ -8,7 +8,7 @@
 - Xcode
 <p align= "center">
 
-<img src = "images/exploreherecart.png" width="100">
+<img src = "exploreherecart.png" width="100">
 
 ![Detailview](exploreheredetailview.png)
 
