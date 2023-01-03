@@ -50,6 +50,9 @@
 		B31D475828B5243400A75FC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B31D475D28BCF6CF00A75FC1 /* HotelListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListModel.swift; sourceTree = "<group>"; };
 		B31D476128BFE43500A75FC1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B32891F6296473F4003D9F85 /* exploreherecart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exploreherecart.png; sourceTree = "<group>"; };
+		B32891F7296473F4003D9F85 /* exploreheredetailview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exploreheredetailview.png; sourceTree = "<group>"; };
+		B32891F8296473F4003D9F85 /* exploreheretripview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exploreheretripview.png; sourceTree = "<group>"; };
 		B3850AA128C636D8004DA281 /* homeworkweek3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = homeworkweek3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B3A0191C28CC7C42000D2A27 /* ListViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViews.swift; sourceTree = "<group>"; };
 		B3A0191E28CCDB74000D2A27 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -85,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				B3EEEE8F28E6067E00807483 /* README.md */,
+				B32891F6296473F4003D9F85 /* exploreherecart.png */,
+				B32891F7296473F4003D9F85 /* exploreheredetailview.png */,
+				B32891F8296473F4003D9F85 /* exploreheretripview.png */,
 				B3850AA128C636D8004DA281 /* homeworkweek3.playground */,
 				B31D476128BFE43500A75FC1 /* MyPlayground.playground */,
 				B31D473F28B51AF900A75FC1 /* ExploreHere */,
