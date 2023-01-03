@@ -8,11 +8,11 @@
 - Xcode
 <p align= "center">
 
-<img src = "exploreherecart.png" width="100",height="100">
+<img src = "exploreheretripview.png" width="100">
+<img src = "exploreheredetailview.png" width="100">
+<img src = "exploreherecart.png" width="100">
 
-![Detailview](exploreheredetailview.png)
 
-![Tripview](exploreheretripview.png)
 </p>
 ## Concepts Learned
 
