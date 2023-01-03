@@ -21,7 +21,15 @@ struct ItemRows: View {
             VStack(alignment: .leading, spacing: 10){
                 Text(activity.name)
                     .bold()
+                Text("\(activity.price)$")
             }
+            Spacer()
+            Image(systemName: "trash")
+                .foregroundColor(Color(hue: 1.0, saturation: 0.89, brightness: 0.835))
+                .onTapGesture {
+                    tripType.removeFromCart(newItem: activity)
+                }
+                .padding()
         }
         .padding(.horizontal)
         .frame(maxWidth:.infinity,alignment: .leading)

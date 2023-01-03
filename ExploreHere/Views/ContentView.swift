@@ -9,15 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var tripType : TripType
-    @State private var PlanTripViewIsShowing = false
     @State private var ListScreenIsShowing = false
-    @State private var selection = 1
+//    @State private var selection = 1
+    @State var currentTab : Tab = .cart
+    
     
     var body: some View {
         VStack{
-          
-            TabView(selection:$selection){
-                
+            
+            TabView(selection:$currentTab){
+             
                 Homescreen()
                     .tabItem {
                         Image(systemName: "house")
@@ -31,9 +32,8 @@ struct ContentView: View {
                             .resizable()
                         Text("Hotel")
                     }
-                    .badge(hotelList.count)
                     .tag(0)
-                PlanTripView( PlanTripViewIsShowing: $PlanTripViewIsShowing)
+                PlanTripView()
                     .environmentObject(tripType)
                   
                     .tabItem {
@@ -41,16 +41,37 @@ struct ContentView: View {
                             .resizable()
                         Text ("Activities")
                     }
-                    .badge(activities.count)
+                    
                     .tag(1)
-              
-                  
-            }  .accentColor(.black)
-    
+                CartView()
+                    .environmentObject(tripType)
+                    .tabItem{ 
+                        CartButton(numberOfItems: tripType.activities.count)
+                        Text ("Cart")
+                            
+                    }
+                
+                 
+            }
+            
+        
+            .accentColor(.black)
+        
            
               
         
         }
+       //  .toolbar{
+        //     NavigationLink{
+        //        CartView()
+        //            .environmentObject(tripType)
+        //    }label: {
+        //         CartButton(numberOfItems: tripType.activities.count)
+        //            .environmentObject(tripType)
+           // }
+            
+                 
+       //  }
     }
 }
 

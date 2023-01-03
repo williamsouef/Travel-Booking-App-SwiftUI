@@ -9,44 +9,44 @@ import SwiftUI
 
 struct PlanTripView: View {
 
-@Binding var PlanTripViewIsShowing : Bool
+
 @StateObject var tripType = TripType()
+
     
     var body: some View {
         
         
         NavigationView{
           
-            
+            ZStack{
+                
+    // ADD A BACKGROUND
             VStack(alignment: .center){
-                List(activities) { activity in
+                LazyVGrid(
+                  columns: [
+                    GridItem(.flexible(minimum: 100, maximum: 260)),
+                    GridItem(.flexible(minimum: 100, maximum: 260))
+                  ], spacing: 30
+                )
+                {
+                    ForEach(activities, id: \.id) { activity in
                    
-                NavigationLink(destination: DetailExperienceView(activity: activity)){
+                    NavigationLink(destination: DetailExperienceView(activity: activity)){
                     ExperiencesButton(name: activity.name, image: activity.image)
-                        .padding(55)
-                    
+                        .padding(35)
+                
                     }
+                }
                 }
                 .navigationBarTitle(" Trips")
-                .toolbar{
-                    NavigationLink{
-                        CartView()
-                            .environmentObject(tripType)
-                    }label: {
-                        CartButton(numberOfItems: tripType.activities.count)
-                            .environmentObject(tripType)
-                    }
-                   
-                        
-                }
-                
+
             }
             
         }.accentColor(.black)
         
         
        
-        
+        }
         
         }
 }
@@ -56,7 +56,8 @@ struct PlanTripView_Previews: PreviewProvider {
     private static var PlanTripViewIsShowing = Binding.constant(false)
     static var previews: some View {
         
-        PlanTripView(PlanTripViewIsShowing: PlanTripViewIsShowing)
+        PlanTripView()
             .environmentObject(TripType())
+            .previewInterfaceOrientation(.portrait)
     }
 }

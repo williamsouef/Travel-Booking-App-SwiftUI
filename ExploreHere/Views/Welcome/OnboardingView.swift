@@ -28,7 +28,7 @@ struct OnboardingScreen: View {
                         
              Text("Explore")
                     
-                        .font(.title)
+                    .font(.title)
                     .bold()
                     .multilineTextAlignment(.center)
                     .padding()

@@ -12,17 +12,21 @@ import Foundation
 class TripType : ObservableObject {
     
     @Published var activities : [Activities] = []
+    @Published var places : [Places] = []
     @Published var total : Int = 0
+   
     
     
     func addActivities(newItem: Activities) {
        
         activities.append(newItem)
+        total += newItem.price
     }
     
     func removeFromCart (newItem: Activities){
         
         activities = activities.filter{ $0.id != newItem.id}
+        total -= newItem.price
     }
     
 }
