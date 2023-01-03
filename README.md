@@ -8,7 +8,7 @@
 - Xcode
 <p align= "center">
 
-![Cart](exploreherecart.png)
+![Cart](exploreherecart.png 100x20)
 
 ![Detailview](exploreheredetailview.png)
 
