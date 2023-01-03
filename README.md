@@ -7,6 +7,9 @@
 - SwiftUI
 - Xcode
 
+![Cart](exploreherecart.png)
+![Detailview](exploreheredetailview.png)
+![Tripview](exploreheretripview.png)
 
 ## Concepts Learned
 
