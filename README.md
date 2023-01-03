@@ -1,6 +1,6 @@
 #  Booking Travel App
 
-- E-commerce app to book an hotel and activities.
+- E-commerce travel booking app to book hotels and activities.
 
 ## Technologies Used
 - Swift
