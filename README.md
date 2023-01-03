@@ -7,7 +7,10 @@
 - SwiftUI
 - Xcode
 <p align= "center">
-![Cart](exploreherecart.png), ![Detailview](exploreheredetailview.png)
+
+![Cart](exploreherecart.png)
+
+![Detailview](exploreheredetailview.png)
 
 ![Tripview](exploreheretripview.png)
 </p>
