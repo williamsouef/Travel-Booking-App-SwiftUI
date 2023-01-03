@@ -1,5 +1,7 @@
 #  Booking Travel App
 
+- E-commerce app to book an hotel and activities 
+
 ## Technologies Used
 - Swift
 - SwiftUI

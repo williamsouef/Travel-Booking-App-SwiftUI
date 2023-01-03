@@ -10,13 +10,14 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var tripType : TripType
     @State private var ListScreenIsShowing = false
-    @State private var selection = 1
+//    @State private var selection = 1
+    @State var currentTab : Tab = .cart
     
     
     var body: some View {
         VStack{
             
-            TabView(selection:$selection){
+            TabView(selection:$currentTab){
              
                 Homescreen()
                     .tabItem {
@@ -49,8 +50,8 @@ struct ContentView: View {
                         Text ("Cart")
                             
                     }
-                                  
-                  
+                
+                 
             }
             
         

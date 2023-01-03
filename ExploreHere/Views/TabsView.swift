@@ -12,12 +12,7 @@ struct TabsView: View,Hashable{
     var body: some View {
         VStack{
             
-           
-          
-        
-            
-  
-                
+
         TabsLayoutView()
             .padding()
             .background(
