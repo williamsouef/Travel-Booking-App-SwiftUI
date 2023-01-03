@@ -6,11 +6,11 @@
 - Swift
 - SwiftUI
 - Xcode
-
+<p align= "center">
 ![Cart](exploreherecart.png), ![Detailview](exploreheredetailview.png)
 
 ![Tripview](exploreheretripview.png)
-
+</p>
 ## Concepts Learned
 
 - How to modal the navigation using 2 screens by using $Binding and $State and Environnement Object
