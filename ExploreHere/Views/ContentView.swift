@@ -44,7 +44,7 @@ struct ContentView: View {
                     
                     .tag(1)
                 CartView()
-                    .environmentObject(tripType)
+             
                     .tabItem{ 
                         CartButton(numberOfItems: tripType.activities.count)
                         Text ("Cart")

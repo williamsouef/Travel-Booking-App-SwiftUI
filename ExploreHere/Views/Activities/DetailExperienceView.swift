@@ -26,14 +26,12 @@ struct DetailExperienceView: View {
                     .frame(maxWidth: 500, maxHeight: 300)
                     
                     }
-                    
                         Text(activity.name)
                         .font(.title)
                         .fontWeight(.semibold)
                         .padding()
                     
-                    
-                    Text(activity.description)
+                        Text(activity.description)
                         .tracking(-1)
                         .multilineTextAlignment(.leading)
                         
