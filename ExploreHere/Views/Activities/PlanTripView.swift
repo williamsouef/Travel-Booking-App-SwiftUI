@@ -11,7 +11,15 @@ struct PlanTripView: View {
 
 
 @StateObject var tripType = TripType()
-
+@State private var searchText = ""
+    
+    var filteredMessages: [Activities] {
+    if searchText.isEmpty {
+        return activities
+    } else {
+        return activities.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+    }
+}
     
     var body: some View {
         
@@ -29,7 +37,7 @@ struct PlanTripView: View {
                   ], spacing: 30
                 )
                 {
-                    ForEach(activities, id: \.id) { activity in
+                    ForEach(filteredMessages, id: \.id) { activity in
                    
                     NavigationLink(destination: DetailExperienceView(activity: activity)){
                     ExperiencesButton(name: activity.name, image: activity.image)
@@ -47,6 +55,7 @@ struct PlanTripView: View {
         
        
         }
+        .searchable(text:$searchText , prompt: "type something here...")
         
         }
 }

@@ -11,12 +11,17 @@ import Foundation
 // ADD THE QUANTITIES
 
 //MARK: MODEL
-struct Activities : Identifiable {
+
+struct Activities : Identifiable, Codable {
+    
     var id = UUID()
     let name : String
     let image : String
     let description : String
     let price : Int
+    
+    
+  
     
 }
 

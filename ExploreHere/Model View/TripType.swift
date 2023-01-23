@@ -7,15 +7,22 @@
 
 import Foundation
 
+
 //MARK: MODEL VIEW 
 
 class TripType : ObservableObject {
     
+    
+    
     @Published var activities : [Activities] = []
     @Published var places : [Places] = []
     @Published var total : Int = 0
+    @Published var searchText : String = ""
+   
+
    
     
+  
     
     func addActivities(newItem: Activities) {
        
@@ -29,4 +36,8 @@ class TripType : ObservableObject {
         total -= newItem.price
     }
     
-}
+
+
+    }
+    
+
