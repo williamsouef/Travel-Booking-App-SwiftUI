@@ -10,15 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var tripType : TripType
     @State private var ListScreenIsShowing = false
-//    @State private var selection = 1
-    @State var currentTab : Tab = .cart
+    @State private var selection = 1
+    
     
     
     var body: some View {
         VStack{
             
             
-            TabView(selection:$currentTab){
+            TabView(selection:$selection){
              
                 Homescreen()
                     .tabItem {
@@ -47,32 +47,23 @@ struct ContentView: View {
                 CartView()
              
                     .tabItem{ 
-                        CartButton(numberOfItems: tripType.activities.count)
+                        CartButton(numberOfItems: 0)
                         Text ("Cart")
                             
                     }
+                    .badge(tripType.activities.count)
                 
-                 
+                    
             }
             
         
-            .accentColor(.black)
+            .accentColor(.blue)
         
            
               
         
         }
-       //  .toolbar{
-        //     NavigationLink{
-        //        CartView()
-        //            .environmentObject(tripType)
-        //    }label: {
-        //         CartButton(numberOfItems: tripType.activities.count)
-        //            .environmentObject(tripType)
-           // }
-            
-                 
-       //  }
+      
     }
 }
 

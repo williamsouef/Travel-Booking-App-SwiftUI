@@ -16,7 +16,7 @@ struct CartButton: View {
         Image(systemName: "cart")
                 .padding(.top,8)
             if numberOfItems > 0 {
-            Text("\(numberOfItems)")
+                Text("\(numberOfItems)")
                 .font(.caption2).bold()
                 .foregroundColor(.white)
                 .frame(width: 15, height: 15)

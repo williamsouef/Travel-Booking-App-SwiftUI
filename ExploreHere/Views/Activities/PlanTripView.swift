@@ -28,7 +28,7 @@ struct PlanTripView: View {
           
             ZStack{
                 
-    // ADD A BACKGROUND
+    
             VStack(alignment: .center){
                 LazyVGrid(
                   columns: [
