@@ -9,7 +9,7 @@
 <p align= "center">
 
 <img src = "explorescreen.png" width="200">
-<img src = "explorehereactivity.png" width="200">
+<img src = "exploreactivity.png" width="200">
 <img src = "explorecart.png" width="200">
 
 
