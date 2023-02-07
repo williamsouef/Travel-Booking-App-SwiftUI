@@ -20,9 +20,6 @@ struct Activities : Identifiable, Codable {
     let description : String
     let price : Int
     
-    
-  
-    
 }
 
 

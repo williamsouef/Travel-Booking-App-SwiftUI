@@ -8,9 +8,9 @@
 - Xcode
 <p align= "center">
 
-<img src = "exploreheretripview.png" width="200">
-<img src = "exploreheredetailview.png" width="200">
-<img src = "exploreherecart.png" width="200">
+<img src = "explorescreen.png" width="200">
+<img src = "explorehereactivity.png" width="200">
+<img src = "explorecart.png" width="200">
 
 
 </p>
