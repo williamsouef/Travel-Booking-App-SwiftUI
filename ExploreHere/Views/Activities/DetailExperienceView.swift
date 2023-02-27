@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct DetailExperienceView: View {
    
@@ -13,6 +14,13 @@ struct DetailExperienceView: View {
    
     @EnvironmentObject var tripType : TripType
     
+    @State var mapRegion : MKCoordinateRegion
+    
+    init(activity:Activities){
+        
+        self.activity = activity
+        self._mapRegion = State(initialValue: MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: activity.latitude, longitude: activity.longitude), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)))
+    }
     
     var body: some View {
     
@@ -23,7 +31,7 @@ struct DetailExperienceView: View {
                 Image(activity.image)
                     .resizable()
                     
-                    .frame(maxWidth: 500, maxHeight: 300)
+                    .frame(maxWidth: 800, maxHeight: 300)
                     
                     }
                         Text(activity.name)
@@ -36,7 +44,10 @@ struct DetailExperienceView: View {
                         .multilineTextAlignment(.leading)
                         
                     .padding()
-               
+                
+                Map(coordinateRegion:$mapRegion)
+                    .cornerRadius(30)
+                
                     HStack(alignment: .top){
                         Spacer()
                     Button(action: {
@@ -62,7 +73,6 @@ struct DetailExperienceView: View {
                }
                         Spacer()
                 }
-                    
                 }
         
             .ignoresSafeArea()
