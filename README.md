@@ -5,6 +5,7 @@
 ## Technologies Used
 - Swift
 - SwiftUI
+- MapKit
 - Xcode
 <p align= "center">
 
