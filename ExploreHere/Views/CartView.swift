@@ -26,11 +26,14 @@ struct CartView: View {
             } else {
         Text("Your cart is empty!")
                     .padding()
+                
             }
                 
             Text("Total price is")
             Spacer()
             Text("$\(tripType.total)")
+            PaymentButtonView(action: {})
+                .padding()
     }
 }
     }

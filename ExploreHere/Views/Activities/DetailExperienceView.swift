@@ -25,13 +25,13 @@ struct DetailExperienceView: View {
     var body: some View {
     
         VStack {
-            VStack(alignment: .leading, spacing:10){
+            VStack(alignment: .center, spacing:10){
                     
                     HStack(alignment: .top){
                 Image(activity.image)
-                    .resizable()
-                    
-                    .frame(maxWidth: 800, maxHeight: 300)
+                            .resizable()
+                            .frame(width: 400,height: 250)
+                            .clipped()
                     
                     }
                         Text(activity.name)
@@ -79,7 +79,7 @@ struct DetailExperienceView: View {
             
                 .padding()
             
-        }
+        }.edgesIgnoringSafeArea(.top)
          
             
                 
