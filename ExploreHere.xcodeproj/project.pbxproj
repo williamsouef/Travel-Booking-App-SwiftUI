@@ -24,6 +24,8 @@
 		B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A0191E28CCDB74000D2A27 /* DetailView.swift */; };
 		B3AB545E297D4D920045F08B /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AB545D297D4D920045F08B /* SearchBarView.swift */; };
 		B3D5058229AF30280002F557 /* PaymentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D5058129AF30280002F557 /* PaymentButtonView.swift */; };
+		B3D5058429AF58D70002F557 /* MapKit.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D5058329AF58D70002F557 /* MapKit.png */; };
+		B3D5058629AF58DD0002F557 /* ApplePay.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D5058529AF58DD0002F557 /* ApplePay.png */; };
 		B3EC7EC428D3C5C2001E276E /* PlanTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EC328D3C5C2001E276E /* PlanTripView.swift */; };
 		B3EC7EC628D3C744001E276E /* PlanTripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EC528D3C744001E276E /* PlanTripModel.swift */; };
 		B3EC7ECA28D5DBBA001E276E /* ExperiencesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EC928D5DBBA001E276E /* ExperiencesButton.swift */; };
@@ -63,6 +65,8 @@
 		B3A0191E28CCDB74000D2A27 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		B3AB545D297D4D920045F08B /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		B3D5058129AF30280002F557 /* PaymentButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButtonView.swift; sourceTree = "<group>"; };
+		B3D5058329AF58D70002F557 /* MapKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapKit.png; sourceTree = "<group>"; };
+		B3D5058529AF58DD0002F557 /* ApplePay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplePay.png; sourceTree = "<group>"; };
 		B3EC7EC328D3C5C2001E276E /* PlanTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTripView.swift; sourceTree = "<group>"; };
 		B3EC7EC528D3C744001E276E /* PlanTripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTripModel.swift; sourceTree = "<group>"; };
 		B3EC7EC928D5DBBA001E276E /* ExperiencesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesButton.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				B3EEEE8F28E6067E00807483 /* README.md */,
 				B32891F6296473F4003D9F85 /* exploreherecart.png */,
 				B32891F7296473F4003D9F85 /* exploreheredetailview.png */,
+				B3D5058329AF58D70002F557 /* MapKit.png */,
+				B3D5058529AF58DD0002F557 /* ApplePay.png */,
 				B3046A262992AD200017F667 /* explorescreen.png */,
 				B3046A272992AD850017F667 /* exploreactivity.png */,
 				B3046A252992AD1A0017F667 /* explorecart.png */,
@@ -261,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31D474828B51AFA00A75FC1 /* Preview Assets.xcassets in Resources */,
+				B3D5058429AF58D70002F557 /* MapKit.png in Resources */,
 				B31D474528B51AFA00A75FC1 /* Assets.xcassets in Resources */,
+				B3D5058629AF58DD0002F557 /* ApplePay.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

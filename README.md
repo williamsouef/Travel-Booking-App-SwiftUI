@@ -6,12 +6,14 @@
 - Swift
 - SwiftUI
 - MapKit
-- Xcode
+- ApplePay
+
 <p align= "center">
 
 <img src = "explorescreen.png" width="200">
 <img src = "exploreactivity.png" width="200">
-<img src = "explorecart.png" width="200">
+<img src = "MapKit.png" width="200">
+<img src = "ApplePay.png" width="200">
 
 
 </p>
