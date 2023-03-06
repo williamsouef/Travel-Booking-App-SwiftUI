@@ -16,6 +16,7 @@ struct ExperiencesButton: View {
         
         ZStack(alignment: .bottom){
         Image(image)
+                .resizable(resizingMode: .stretch)
                 .frame(width: 150, height: 150)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .blur(radius: 0.5)
