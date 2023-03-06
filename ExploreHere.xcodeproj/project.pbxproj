@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B30469A2298C03CD0017F667 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30469A1298C03CD0017F667 /* MapView.swift */; };
 		B30AA4A129AB7F3E00475AE1 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30AA4A029AB7F3E00475AE1 /* IconView.swift */; };
 		B31D474128B51AF900A75FC1 /* ExploreHereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D474028B51AF900A75FC1 /* ExploreHereApp.swift */; };
 		B31D474328B51AF900A75FC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D474228B51AF900A75FC1 /* ContentView.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B30469A1298C03CD0017F667 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B3046A252992AD1A0017F667 /* explorecart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explorecart.png; sourceTree = "<group>"; };
 		B3046A262992AD200017F667 /* explorescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explorescreen.png; sourceTree = "<group>"; };
 		B3046A272992AD850017F667 /* exploreactivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exploreactivity.png; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				B3EC7ED328D74B15001E276E /* Welcome */,
 				B3EC7ED228D74AC6001E276E /* Hotels */,
 				B3EC7ED128D74A71001E276E /* Activities */,
-				B30469A1298C03CD0017F667 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 				B31D474F28B5230D00A75FC1 /* Roundviews.swift in Sources */,
 				B3EC7EC628D3C744001E276E /* PlanTripModel.swift in Sources */,
 				B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */,
-				B30469A2298C03CD0017F667 /* MapView.swift in Sources */,
 				B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */,
 				B3EC7EDD28E0CA61001E276E /* ItemRows.swift in Sources */,
 				B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */,

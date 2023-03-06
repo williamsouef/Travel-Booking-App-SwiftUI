@@ -31,15 +31,17 @@ struct DetailExperienceView: View {
                 Image(activity.image)
                             .resizable()
                             .frame(width: 400,height: 250)
-                            .clipped()
+                            .cornerRadius(15)
+                          
                     
                     }
                         Text(activity.name)
                         .font(.title)
-                        .fontWeight(.semibold)
-                        .padding()
+                        .fontWeight(.black)
+                     
                     
                         Text(activity.description)
+                    .font(.headline)
                         .tracking(-1)
                         .multilineTextAlignment(.leading)
                         
@@ -73,7 +75,7 @@ struct DetailExperienceView: View {
                }
                         Spacer()
                 }
-                }
+            }
         
             .ignoresSafeArea()
             
