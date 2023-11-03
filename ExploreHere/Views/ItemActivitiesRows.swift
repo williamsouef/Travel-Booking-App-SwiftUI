@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemRows: View {
+struct ItemActivitiesRows: View {
     @EnvironmentObject var tripType : TripType
     var activity : Activities
     var body: some View {
@@ -38,7 +38,7 @@ struct ItemRows: View {
 
 struct ItemRows_Previews: PreviewProvider {
     static var previews: some View {
-        ItemRows(activity: activities[2])
+        ItemActivitiesRows(activity: activities[2])
         
     }
 }
