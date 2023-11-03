@@ -8,10 +8,14 @@
 import SwiftUI
 
 
-struct DetailView: View {
+struct HotelsDetailView: View {
+    //TODO: Redesign the detail view
+    var hotel : Hotels
+    @EnvironmentObject var hotelsList : HotelType
     
-    var hotel : Hotels = hotelList[0]
-    
+    init(hotel: Hotels) {
+        self.hotel = hotel
+    }
     var body: some View {
         VStack(alignment: .center, spacing: 10){
       
@@ -31,7 +35,7 @@ struct DetailView: View {
             
             Button(action: {
                 withAnimation{
-                print("Added to the hotel booking list")
+                    hotelsList.addHotels(newItem: hotel)
                 }
             }){
                 RoundedRectangle(cornerRadius: 30)
@@ -45,7 +49,6 @@ struct DetailView: View {
                             .fontWeight(.heavy)
                             .foregroundColor(Color.white
                             )
-                            
                     })
             }
 
@@ -62,6 +65,6 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     
     static var previews: some View {
-        DetailView(hotel: hotelList[0])
+        HotelsDetailView(hotel: hotelList[0])
     }
 }

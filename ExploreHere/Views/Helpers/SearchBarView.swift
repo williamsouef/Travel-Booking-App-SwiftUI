@@ -30,9 +30,7 @@ struct SearchBarView: View {
                             searchText = ""
                         }
                     ,alignment: .trailing
-                
                 )
-            
         }
         .padding()
         .font(.headline)
@@ -40,7 +38,6 @@ struct SearchBarView: View {
         RoundedRectangle(cornerRadius: 25)
             .fill(Color("RoundedBackgroundColor-1"))
         )
-        
     }
 }
 
