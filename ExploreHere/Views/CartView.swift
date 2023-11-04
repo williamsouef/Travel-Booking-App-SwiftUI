@@ -12,6 +12,11 @@ struct CartView: View {
     @EnvironmentObject var tripType : TripType
     
     var body: some View {
+        VStack(alignment: .leading){
+        Text("Cart")
+                .font(.largeTitle).bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
         ScrollView{
             
             if tripType.activities.count > 0 {
@@ -20,10 +25,18 @@ struct CartView: View {
                     ItemRows(activity: activities)}
             } else {
         Text("Your cart is empty!")
+                    .padding()
+                
             }
+                
+            Text("Total price is")
+            Spacer()
+            Text("$\(tripType.total)")
+            PaymentButtonView(action: {})
+                .padding()
     }
-        .navigationTitle(Text("My Cart"))
 }
+    }
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {

@@ -9,15 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var tripType : TripType
-    @State private var PlanTripViewIsShowing = false
+    @EnvironmentObject var hotelType : HotelType
     @State private var ListScreenIsShowing = false
     @State private var selection = 1
-    
+
     var body: some View {
         VStack{
-          
             TabView(selection:$selection){
-                
+             
                 Homescreen()
                     .tabItem {
                         Image(systemName: "house")
@@ -31,25 +30,26 @@ struct ContentView: View {
                             .resizable()
                         Text("Hotel")
                     }
-                    .badge(hotelList.count)
                     .tag(0)
-                PlanTripView( PlanTripViewIsShowing: $PlanTripViewIsShowing)
-                    .environmentObject(tripType)
-                  
+                PlanTripView()
+                    //.environmentObject(tripType)
+
                     .tabItem {
                         Image(systemName:"figure.walk")
                             .resizable()
                         Text ("Activities")
                     }
-                    .badge(activities.count)
                     .tag(1)
-              
-                  
-            }  .accentColor(.black)
-    
-           
-              
-        
+                CartView()
+             
+                    .tabItem{ 
+                        CartButton(numberOfItems: 0)
+                        Text ("Cart")
+                            
+                    }
+                    .badge(hotelType.hotelComponent.count)
+            }
+            .accentColor(.blue)
         }
     }
 }
